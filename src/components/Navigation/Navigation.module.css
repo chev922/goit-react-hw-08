@@ -1,0 +1,60 @@
+.nav {
+  display: flex;
+  gap: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.link {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  border: none;
+  background: none;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+}
+
+.link::before {
+  margin-left: auto;
+}
+
+.link::after,
+.link::before {
+  width: 0%;
+  height: 2px;
+  background: #1f6eb8;
+  display: block;
+  transition: 0.5s;
+}
+
+.link:hover::after,
+.link:hover::before {
+  width: 100%;
+}
+
+.link:hover {
+  border: 2px solid #1f6eb8;
+  border-radius: 5px;
+}
+
+.active {
+  color: #1f6eb8;
+}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    flex-direction: column;
+    gap: 0;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .nav {
+    gap: 2rem;
+  }
+  .link {
+    font-size: 25px;
+  }
+}

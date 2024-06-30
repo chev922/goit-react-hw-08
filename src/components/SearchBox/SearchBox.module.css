@@ -1,0 +1,23 @@
+.label {
+  margin-bottom: 10px;
+  font-size: 18px;
+  display: block;
+}
+
+.input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.container {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 330px) {
+  .container {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+  row-gap: 10px;
+  width: 300px;
+  border-radius: 10px;
+}
+.btn {
+  display: block;
+  padding: 5px 10px;
+  width: 70px;
+  position: absolute;
+  top: 50%;
+  right: -7%;
+  transform: translate(-50%, -50%);
+}
+.remove {
+  background-color: red;
+  color: white;
+}
